@@ -18,18 +18,28 @@ while(ch=='y')
 return;
 }  
 
-void subtract()
+void divide()
 {
 char ch='y';
 while(ch=='y')
 {
   float a,b;
-  cout<<"\n Please enter the numbers you wish to subtract : ";
+  cout<<"\n Please enter the numbers you wish to divide : ";
   cout<<"\n a = ";
   cin>>a;
   cout<<"\n b = ";
   cin>>b;
-  cout<<"The answer is "<<a-b<<" \n";
+  if(b==0)
+  {
+     cout<<"Please enter a valid denominator \n";
+     cout<<"Do you wish to continue? Yes->y No->n";
+     cin>>ch;
+     if(ch=='y')
+     continue;
+     else
+     return;
+  }
+  cout<<"The answer is "<<a/b<<" \n";
   cout<<"\n Do you wish to continue? Yes->y No->n";
   cin>>ch;
 }
