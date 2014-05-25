@@ -4,6 +4,24 @@
 
 using namespace std;
 
+void multiply()
+{
+	int a,b,c;
+	cout<<"Enter the two numbers to be multiplied : ";
+	cin>>a>>b;
+	c=a*b;
+	cout<<"Product : "<<c;
+}
+
+void trig_sin()
+{
+	float a,b;
+	cout<<"Enter the angle (radians): ";
+	cin>>a;
+	b=sin(a);
+	cout<<"The sine of the angle is : "<<b;
+}
+
 void trig_tan ()
 {
   float rad, deg, ans;
@@ -39,7 +57,7 @@ int main()
   cout<<"3.Multiply\n";
   cout<<"4.Divide\n";
   cout<<"5.Exponentiation\n";
-  cout<<"6.cos\n"
+  cout<<"6.cos\n";
   cout<<"7.sin\n";
   cout<<"8.tan\n";
 
