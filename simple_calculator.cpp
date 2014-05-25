@@ -5,6 +5,49 @@
 
 using namespace std;
 
+void trig_cos()
+{
+char ch='y';
+while(ch=='y')
+{
+  float n;
+  cout<<"\n Please enter the number(in radians) whose cosine you wish to calculate : ";
+  cin>>n;
+  cout<<"\n The cosine of the above number is "<<cos(n)<<"\n";
+  cout<<"\n Do you wish to continue? Yes->y No->n";
+  cin>>ch;
+}
+return;
+}  
+
+void divide()
+{
+char ch='y';
+while(ch=='y')
+{
+  float a,b;
+  cout<<"\n Please enter the numbers you wish to divide : ";
+  cout<<"\n a = ";
+  cin>>a;
+  cout<<"\n b = ";
+  cin>>b;
+  if(b==0)
+  {
+     cout<<"Please enter a valid denominator \n";
+     cout<<"Do you wish to continue? Yes->y No->n";
+     cin>>ch;
+     if(ch=='y')
+     continue;
+     else
+     return;
+  }
+  cout<<"The answer is "<<a/b<<" \n";
+  cout<<"\n Do you wish to continue? Yes->y No->n";
+  cin>>ch;
+}
+return;
+}
+
 void multiply()
 {
 	int a,b,c;
