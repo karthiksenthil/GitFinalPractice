@@ -47,8 +47,6 @@ while(ch=='y')
 return;
 }
 
-
-
 void multiply()
 {
 	int a,b,c;
