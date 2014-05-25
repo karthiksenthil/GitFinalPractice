@@ -4,6 +4,22 @@
 
 using namespace std;
 
+void add()
+{
+        int a,b;
+        printf("Enter two numbers to be added\n");
+        scanf("%d %d\n",&a,&b);
+        printf("The sum is: %d",a+b);
+}
+
+void subtract()
+{
+        int a,b;
+        printf("Enter two numbers to be subtracted\n");
+        scanf("%d %d\n",&a,&b);
+        printf("The difference is: %d",a-b);
+}
+
 void trig_cos()
 {
 char ch='y';
