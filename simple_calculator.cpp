@@ -1,6 +1,7 @@
 #include <iostream> // for cin, cout
 #include <math.h>
 #include <stdio.h> // for printf, scanf
+#define PI 3.1415926
 
 using namespace std;
 
@@ -93,10 +94,11 @@ void trig_tan ()
 
 void exponentiation ()
 {
-  long int base, exponent, result = 1;
+  long int base, exponent, temp1, temp2, result = 1;
   printf ("Enter base and exponent: ");
   scanf ("%ld%ld", &base, &exponent);
-
+  temp1 = base;
+  temp2 = exponent;
   while (exponent)
   {
     if (exponent & 1)
@@ -104,8 +106,9 @@ void exponentiation ()
     exponent >>= 1;
     base *= base;
   }
-
-  printf ("%ld raised to %ld is %ld", base, exponent, result);
+  base = temp1;
+  exponent = temp2;
+  printf ("%ld raised to %ld is %ld\n", base, exponent, result);
 }
 
 int main()
