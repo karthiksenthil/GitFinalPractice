@@ -1,7 +1,9 @@
-#include<iostream>
-#include<math.h>
+#include <iostream> // for cin, cout
+#include <math.h>
+#include <stdio.h> // for printf, scanf
 
 using namespace std;
+
 void multiply()
 {
 	int a,b,c;
@@ -10,6 +12,7 @@ void multiply()
 	c=a*b;
 	cout<<"Product : "<<c;
 }
+
 void trig_sin()
 {
 	float a,b;
@@ -18,6 +21,34 @@ void trig_sin()
 	b=sin(a);
 	cout<<"The sine of the angle is : "<<b;
 }
+
+void trig_tan ()
+{
+  float rad, deg, ans;
+  printf ("Enter angle in degrees: ");
+  scanf ("%f", &deg);
+  rad = (deg * PI) / 180.0;
+  ans = tan (rad);
+  printf ("The tangent of %f degrees is %f.\n", deg, ans);
+}
+
+void exponentiation ()
+{
+  long int base, exponent, result = 1;
+  printf ("Enter base and exponent: ");
+  scanf ("%ld%ld", &base, &exponent);
+
+  while (exponent)
+  {
+    if (exponent & 1)
+      result *= base;
+    exponent >>= 1;
+    base *= base;
+  }
+
+  printf ("%ld raised to %ld is %ld", base, exponent, result);
+}
+
 int main()
 {
   cout<<"Welcome to the pro calculator. Choose from foll. :\n";
